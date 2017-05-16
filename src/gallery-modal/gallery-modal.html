@@ -1,7 +1,5 @@
-<ion-content #content class="gallery-modal" (window:resize)="resize($event)" (window:orientationchange)="orientationChange($event)">
-  <button class="close-button" ion-button icon-only (click)="dismiss()">
-    <ion-icon name="{{ closeIcon }}"></ion-icon>
-  </button>
+<ion-content #content class="gallery-modal no-scroll" (window:resize)="resize($event)" (window:orientationchange)="orientationChange($event)">
+  <close-button></close-button>
 
   <!-- Initial image while modal is animating -->
   <div class="image-on-top" #image [ngStyle]="{ 'background-image': 'url(' + photos[initialSlide].url + ')'}" [hidden]="sliderLoaded">

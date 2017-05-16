@@ -1,6 +1,6 @@
 .gallery-modal {
   position: relative;
-  background: black;
+  background: #37415d;
 
   .close-button {
     position: absolute;
@@ -33,5 +33,15 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+  }
+
+  close-button {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+
+    .icon {
+      margin-right: 0 !important;
+    }
   }
 }
